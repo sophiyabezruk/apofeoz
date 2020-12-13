@@ -5,31 +5,25 @@ import Logo from '../../assets/images/Logo.png';
 import * as Styles from './Navbar.styles';
 
 const Navbar = () => {
-  const [visibleNavbar, setVisibleNavbar] = useState(false);
-  // TODO: пофиксить пропадание навбара (30 мин)
-  function onListen() {
-    if (window.scrollY >= 80 && !visibleNavbar) {
-      setVisibleNavbar(true);
-    } else {
-      setVisibleNavbar(false);
-    }
+  const [isScrolled, setIsScrolled] = useState(false);
+  function listenScroll() {
+    const res = window.scrollY > 80;
+    setIsScrolled(res);
   }
 
   useEffect(() => {
-    // componentDidMount аналог на хуках
-    window.addEventListener('scroll', onListen);
-
-    // componentWillUnmount
+    listenScroll();
+    window.addEventListener('scroll', listenScroll);
     return () => {
-      window.removeEventListener('scroll', onListen);
+      window.removeEventListener('scroll', listenScroll);
     };
-  }, [onListen]);
-  // if (!visibleNavbar) return false;
+  }, []);
+
   return (
     <Styles.NavBar
       collapseOnSelect
       expand="sm"
-      isVisible={visibleNavbar}
+      isVisible={isScrolled}
       variant="dark"
       fixed="top"
     >

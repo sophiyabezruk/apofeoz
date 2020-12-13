@@ -3,7 +3,6 @@ import { Container, Row, Col } from '@lskjs/grid';
 import Nav from '@lskjs/navbar/Nav';
 import Button from '@lskjs/button';
 import scrollTo from '@lskjs/scroll';
-import PropTypes from 'prop-types';
 import InstaIcon from '../../assets/svg/Insta';
 import TwitterIcon from '../../assets/svg/Twitter';
 import Like from '../../assets/svg/like';
