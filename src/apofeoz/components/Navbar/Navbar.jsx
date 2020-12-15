@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Nav, Navbar as BsNavbar } from 'react-bootstrap';
 import scrollTo from '@lskjs/scroll';
-import Logo from '../../assets/images/Logo.png';
+import Logo from '../../assets/images/Logo';
 import * as Styles from './Navbar.styles';
 
 const Navbar = () => {
