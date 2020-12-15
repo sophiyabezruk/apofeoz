@@ -9,4 +9,5 @@ export const SectionWrapper = styled('div')`
 
 export const ImageWrapper = styled('div')`
   filter: blur(6px);
+  z-index: -1;
 `;

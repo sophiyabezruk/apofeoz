@@ -18,7 +18,9 @@ function SampleNextArrow(props) {
       style={{
         ...style,
         display: 'block',
-        background: '#D27872',
+        background: '#e4b0ac',
+        borderRadius: '25px',
+        zIndex: '1',
       }}
       onClick={onClick}
     />
@@ -33,7 +35,9 @@ function SamplePrevArrow(props) {
       style={{
         ...style,
         display: 'block',
-        background: '#D27872',
+        background: '#e4b0ac',
+        borderRadius: '25px',
+        zIndex: '1',
       }}
       onClick={onClick}
     />
