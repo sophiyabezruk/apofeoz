@@ -10,15 +10,59 @@ import Report7 from '../../assets/images/отзывы/IMG_2094.png';
 import Report8 from '../../assets/images/отзывы/IMG_2095.png';
 import Report0 from '../../assets/images/отзывы/IMG_2096.png';
 
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: 'block',
+        background: '#D27872',
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className} // CSS class for inner slider div
+      style={{
+        ...style,
+        display: 'block',
+        background: '#D27872',
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
 const settings = {
+  //TODO: 1. заменить стрелки на кастомные иконки и покрасить их красиво
+  //TODO: 2. добавить перелистывание свайпом
   dots: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
   infinite: true,
   speed: 500,
   slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToScroll: 2,
+  swipeToSlide: true,
+  // touchMove: true,
+  nextArrow: <SampleNextArrow />,
+  prevArrow: <SamplePrevArrow />,
+  pauseOnFocus: true,
+  // afterChange: function(index) {
+  //   console.log(
+  //     `Slider Changed to: ${index + 1}, background: #222; color: #bada55`,
+  //   );
+  // },
 };
 
-const Slick = () => (
+const Slick = (onClick) => (
   <Slider {...settings}>
     {/* <Styles.SlidesWrapper> */}
     <div>
