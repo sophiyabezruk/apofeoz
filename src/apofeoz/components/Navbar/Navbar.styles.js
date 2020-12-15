@@ -35,4 +35,4 @@ export const NavLink = styled(Nav.Link)`
   }
 `;
 
-export const NavLogo = styled('img')``;
+export const NavLogo = styled('div')``;

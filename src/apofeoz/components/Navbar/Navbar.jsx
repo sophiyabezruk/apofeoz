@@ -26,17 +26,13 @@ const Navbar = () => {
       isVisible={isScrolled}
       variant="dark"
       fixed="top"
+      href="#HOME"
     >
       <Container>
         <Styles.NavLogoWrapper>
-          <Styles.NavLogo
-            onClick={() => scrollTo('#HOME')}
-            href="#HOME"
-            src={Logo}
-            paddingTop="20"
-            className="d-inline-block align-top"
-            alt="Logo"
-          ></Styles.NavLogo>
+          <Styles.NavLogo onClick={() => scrollTo('#HOME')} paddingTop="20">
+            <Logo />
+          </Styles.NavLogo>
         </Styles.NavLogoWrapper>
         <BsNavbar.Toggle aria-controls="responsive-navbar-nav" />
         <BsNavbar.Collapse id="responsive-navbar-nav">
