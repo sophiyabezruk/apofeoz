@@ -59,11 +59,6 @@ const settings = {
   nextArrow: <SampleNextArrow />,
   prevArrow: <SamplePrevArrow />,
   pauseOnFocus: true,
-  // afterChange: function(index) {
-  //   console.log(
-  //     `Slider Changed to: ${index + 1}, background: #222; color: #bada55`,
-  //   );
-  // },
 };
 
 const Slick = (onClick) => (

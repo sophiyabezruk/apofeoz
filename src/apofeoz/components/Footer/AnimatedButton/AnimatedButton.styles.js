@@ -11,18 +11,21 @@ export const ButtonWrapper = styled('div')`
   transition: opacity 1s ease;
 `;
 
-export const TextItalic = styled('p')`
+export const TextItalic = styled('a')`
   font-style: normal;
   font-weight: 200;
   font-size: 12px;
   line-height: 100%;
   opacity: 0;
   letter-spacing: 0.06em;
+  width: inherit;
+  height: inherit;
 `;
 
 export const TextUnderButton = styled('div')`
   position: absolute;
   width: 100%;
+  height: 100%;
   right: 20px;
   top: 15px;
   left: -45px;

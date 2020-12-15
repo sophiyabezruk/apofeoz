@@ -26,7 +26,7 @@ const links = [
   {
     id: 3,
     title: 'soBez',
-    href: 'https://www.instagram.com/apofeoz_uw/?hl=ru',
+    href: 'https://www.instagram.com/sophiyabezruk',
     icon: <Like size={25} color={theme.colors.darkBrown} />,
   },
 ];
